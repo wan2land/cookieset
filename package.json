@@ -1,7 +1,7 @@
 {
   "name": "httpcookie",
-  "version": "0.1.0",
-  "description": "Very simple ioc container for Javascript(& Typescript).",
+  "version": "0.0.1",
+  "description": "Cookie / SetCookie library for Javascript (& Typescript).",
   "keywords": [
     "cookie",
     "cookies",
@@ -18,14 +18,15 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "prepublish": "npm run build",
-    "build": "rimraf ./dist && tsc -p .",
+    "build": "rimraf ./dist && webpack",
     "lint": "./node_modules/.bin/tslint -c ./tslint.json -p tsconfig.json 'src/**/*.ts' --format stylish",
-    "test": "npm run build && jest test"
+    "test": "webpack --mode=development && jest test"
   },
   "jest": {
     "transform": {
       "^.+\\.tsx?$": "./node_modules/ts-jest/preprocessor.js"
     },
+    "testEnvironment": "node",
     "testRegex": "[^/]*\\.(test|spec)\\.(j|t)sx?$",
     "moduleFileExtensions": [
       "ts",
@@ -37,14 +38,19 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/jest": "^21.1.5",
     "@types/node": "^10.1.0",
+    "awesome-typescript-loader": "^5.0.0",
+    "axios": "^0.18.0",
     "jest": "^21.2.1",
     "rimraf": "^2.6.2",
     "ts-jest": "^21.1.4",
     "ts-node": "^3.3.0",
     "tslint": "^5.7.0",
     "tslint-language-service": "^0.9.6",
-    "typescript": "^2.5.3"
+    "typescript": "^2.5.3",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
   }
 }

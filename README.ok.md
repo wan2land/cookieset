@@ -18,5 +18,13 @@ npm install httpcookie --save
 
 ```javascript
 const httpcookie = require("httpcookie")
-// or import * as httpcookie from "httpcookie"
+// or import httpcookie from "httpcookie"
 ```
+
+then, simple usage as below:
+
+@code("test/cookie-jar.test.ts@example-default", "typescript")
+
+## Example with Axios
+
+@code("test/cookie-jar.test.ts@example-with-axios", "typescript")
