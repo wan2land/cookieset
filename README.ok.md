@@ -1,24 +1,24 @@
-# httpcookie
+# cookieset
 
-[![Downloads](https://img.shields.io/npm/dt/httpcookie.svg)](https://npmcharts.com/compare/httpcookie?minimal=true)
-[![Version](https://img.shields.io/npm/v/httpcookie.svg)](https://www.npmjs.com/package/httpcookie)
-[![License](https://img.shields.io/npm/l/httpcookie.svg)](https://www.npmjs.com/package/httpcookie)
+[![Downloads](https://img.shields.io/npm/dt/cookieset.svg)](https://npmcharts.com/compare/cookieset?minimal=true)
+[![Version](https://img.shields.io/npm/v/cookieset.svg)](https://www.npmjs.com/package/cookieset)
+[![License](https://img.shields.io/npm/l/cookieset.svg)](https://www.npmjs.com/package/cookieset)
 
-[![NPM](https://nodei.co/npm/httpcookie.png)](https://www.npmjs.com/package/httpcookie)
+[![NPM](https://nodei.co/npm/cookieset.png)](https://www.npmjs.com/package/cookieset)
 
 Cookie / SetCookie library for Javascript (& Typescript).
 
 ## Installation
 
 ```bash
-npm install httpcookie --save
+npm install cookieset --save
 ```
 
 ## Usage
 
 ```javascript
-const httpcookie = require("httpcookie")
-// or import httpcookie from "httpcookie"
+const cookieset = require("cookieset")
+// or import cookieset from "cookieset"
 ```
 
 then, simple usage as below:

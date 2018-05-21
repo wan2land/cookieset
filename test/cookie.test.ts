@@ -1,10 +1,10 @@
 
 import {} from "jest"
 
-import httpcookie from "../dist"
+import cookieset from "../dist"
 
 describe("Cookie", () => {
   it("test toCookieString", () => {
-    expect(new httpcookie.Cookie("name", "value").toCookieString()).toEqual("name=value")
+    expect(new cookieset.Cookie("name", "value").toCookieString()).toEqual("name=value")
   })
 })

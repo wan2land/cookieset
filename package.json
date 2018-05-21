@@ -1,24 +1,25 @@
 {
-  "name": "httpcookie",
+  "name": "cookieset",
   "version": "0.0.1",
   "description": "Cookie / SetCookie library for Javascript (& Typescript).",
   "keywords": [
     "cookie",
     "cookies",
     "http",
+    "axios",
     "typescript"
   ],
   "author": "Cris <corgidisco@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/corgidisco/httpcookie.git"
+    "url": "git://github.com/corgidisco/cookieset.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "prepublish": "npm run build",
-    "build": "rimraf ./dist && webpack",
+    "build": "rimraf ./dist && webpack --mode=production",
     "lint": "./node_modules/.bin/tslint -c ./tslint.json -p tsconfig.json 'src/**/*.ts' --format stylish",
     "test": "webpack --mode=development && jest test"
   },
